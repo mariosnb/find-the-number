@@ -1,0 +1,41 @@
+<!-- Find the Number ver. 1.0, Mariosnb 2020 -->
+<!-- V5.2.3 Final project: Find the number, CS3.1: Introduction to web development with HTML5, CSS3, Javascript (https://mathesis.cup.gr/) -->
+<!-- V5.2.3 Τελική εργασία: Μάντεψε τον αριθμό, ΗΥ3.1 Εισαγωγή στην ανάπτυξη ιστοσελίδων με HTML5, CSS3, Javascript (https://mathesis.cup.gr/) -->
+
+<!DOCTYPE html>
+<!-- 1. Δίνεται αρχείο final-test-template.html να γίνουν οι εξής αλλαγές:
+ * ο τίτλος να είναι "μάντεψε έναν αριθμό"
+ * το μέγεθος του text (κουτί εισαγωγής αριθμού) να είναι 5 χαρακτήρες
+ * να συνδεθεί η σελίδα με τα εξωτερικά αρχεία final-test-style.css και 
+ final-test-script.js τα οποία δίδονται και στα οποία θα πρέπει να γίνουν 
+ αλλαγές όπως ορίζεται στα αρχεία αυτά.
+ -->
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>μάντεψε έναν αριθμό</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>Παιχνίδι: μάντεψε τον αριθμό</header>
+    <section id="instructions">
+        Έχουμε διαλέξει ένα τυχαίο αριθμό μεταξύ 1 και 100. 
+        Προσπάθησε να τον μαντέψεις σε 10 το πολύ προσπάθειες.
+        Κάθε φορά θα σού λέμε αν ο αριθμός που μάντεψες είναι μεγαλύτερος
+        ή μικρότερος από τον σωστό αριθμό.
+    </section>
+    <section id="guess">
+        <label for="new-guess">Μάντεψε: </label>
+        <input type="text" name="new-guess" id="new-guess" size="5">
+        <button id="check"> Έλεγχος </button>
+
+    </section>
+    <section>
+        <div id="message">  </div>
+        <div id="low-high"></div>
+        <button id= "restart"> Παίξε ξανά </button>
+    </section>
+    <script src="js/findthenum.js"></script>
+</body>
+</html>

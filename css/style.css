@@ -1,0 +1,74 @@
+/*-- Find the Number ver. 1.0, Mariosnb 2020
+/*-- V5.2.3 Final project: Find the number, CS3.1: Introduction to web development with HTML5, CSS3, Javascript (https://mathesis.cup.gr/)--*/
+/*-- V5.2.3 Τελική εργασία: Μάντεψε τον αριθμό, ΗΥ3.1 Εισαγωγή στην ανάπτυξη ιστοσελίδων με HTML5, CSS3, Javascript (https://mathesis.cup.gr/)--*/
+
+:root {
+    --btn-color: teal;   /* χρώμα πλήκτρων */
+    --btn-text: whitesmoke;   /* χρώμα κειμένου πλήκτρων */
+    --msg-win-color: rgb(0, 128, 32);  /* χρώμα μηνύματος επιτυχίας */
+    --msg-wrong-color: crimson;  /* χρώμα μηνύματος αποτυχίας */
+    --msg-text:floralwhite;  /* χρώμα κειμένου μηνύματος */
+	--low-high-color: gray;  /* χρώμα ιστορικού προσπαθειών */
+}
+/* 
+8. Στο αρχείο stylesheet final-test-style.css να γίνουν οι κατάλληλες αλλαγές 
+που αφορούν στα στοιχεία που εμφανίζονται στον χρήστη, προσπαθώντας να επιτύχετε 
+το αποτέλεσμα που φαίνεται στην παρουσίαση. ιδιαίτερη αναφορά γίνεται ώστε το χρώμα 
+να οριστεί με βάση τα χρώματα που ορίζονται από τις μεταβλητές CSS. */
+* {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 0.3em;
+}
+
+#instructions {
+    margin: 0.5em 0.8em 0.5em 0.8em;
+}
+
+#instructions, label, #low-high{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#guess {
+    margin: 0.5em 0.8em 0.5em 0.8em;
+}
+
+input {
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 1.3em;
+    background-color: var(--btn-color);
+    color: var(--btn-text);
+    border-radius: 7px;
+    padding: 0.1em 0.2em;
+}
+
+#message {
+    color: var(--msg-text);
+    margin-left: 0.4em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#low-high {
+    color: var(--low-high-color);
+    margin:  0.5em 0.8em 0.5em 0.8em;
+}
+
+#restart {
+    margin-left: 0.4em;
+}
